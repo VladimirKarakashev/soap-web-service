@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:as="http://animals.com/soap-zoo-ws">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <as:getZooAnimalRequest>
+            <as:name>Brown Bear</as:name>
+        </as:getZooAnimalRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

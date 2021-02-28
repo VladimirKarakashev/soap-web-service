@@ -1,0 +1,31 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://animals.com/soap-zoo-ws"
+           targetNamespace="http://animals.com/soap-zoo-ws"
+           elementFormDefault="qualified">
+
+    <xs:element name="getZooAnimalRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getZooAnimalResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="animal" type="tns:animal"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="animal">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="lifespan" type="xs:int"/>
+            <xs:element name="type" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+</xs:schema>
